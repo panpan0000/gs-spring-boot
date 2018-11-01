@@ -8,5 +8,5 @@ RUN mkdir -p /opt/jre/
 COPY --from=builder /build/target/*.jar /opt/jre/
 WORKDIR /opt/jre
 ENTRYPOINT ["java", "-jar","gs-spring-boot-0.1.0.jar"] 
-
+EXPOSE 8080
 #https://github.com/spring-guides/gs-spring-boot
